@@ -123,6 +123,10 @@ def connect(loginname, hostserver, portserver):
                         # get and print the data
                         try:
                             data = new_connect.recv(1024)
+                            #print "data received: " + data
+                            op = open("output", "w")
+                            op.write(data)
+                            op.close()
                             # logging
                             if LOGGING == "ON":
                                 logging(data)

@@ -2,3 +2,43 @@
 Sat Dec 14 22:05:01 2013: sam enters the room
 Sat Dec 14 22:05:17 2013: sam: ll
 Sun Dec 15 14:18:37 2013: sam enters the room
+Sun Dec 15 15:53:52 2013: sam enters the room
+Sun Dec 15 15:54:11 2013: sam enters the room
+Sun Dec 15 15:54:37 2013: the topic is: ### WELCOME ON THE NETWORK ###
+sam enters the room
+Sun Dec 15 15:54:59 2013: 
+Sun Dec 15 16:12:53 2013: sam enters the room
+Sun Dec 15 16:13:04 2013: pm from sam to *sam* : mmm
+Sun Dec 15 16:49:34 2013: sam enters the room
+Sun Dec 15 16:52:27 2013: pm from sam to *sam* : lll
+Sun Dec 15 16:53:10 2013: user online: ['sam']
+Sun Dec 15 16:53:34 2013: titi enters the room
+Sun Dec 15 16:53:38 2013: user online: ['titi', 'sam']
+Sun Dec 15 16:54:08 2013: user online: ['titi', 'sam']
+Sun Dec 15 16:55:24 2013: pm from sam to *titi* : lll
+Sun Dec 15 16:56:45 2013: pm from titi to *sam* : kkkkkkkkkkkkkkk
+Sun Dec 15 17:00:00 2013: pm from titi to *sam* : from sam
+Sun Dec 15 17:01:02 2013: 
+Sun Dec 15 17:01:02 2013: 
+Sun Dec 15 17:06:12 2013: titi enters the room
+Sun Dec 15 17:06:17 2013: user online: ['titi', 'sam']
+Sun Dec 15 17:07:08 2013: user online: ['titi', 'sam']
+Sun Dec 15 17:07:22 2013: 
+Sun Dec 15 17:07:22 2013: 
+Sun Dec 15 17:11:23 2013: sam enters the room
+Sun Dec 15 17:11:40 2013: titi enters the room
+Sun Dec 15 17:12:20 2013: User online: ['titi', 'sam']
+Sun Dec 15 17:12:29 2013: User online: ['titi', 'sam']
+Sun Dec 15 17:12:45 2013: titi has left the room
+Sun Dec 15 17:29:24 2013: User online: ['sam']
+Sun Dec 15 17:52:20 2013: User online: ['sam']
+Sun Dec 15 17:52:45 2013: 
+Sun Dec 15 18:16:45 2013: User online: ['sam']
+Sun Dec 15 18:31:12 2013: User online: ['sm']
+Sun Dec 15 18:31:32 2013: User online: ['sm']
+Sun Dec 15 18:31:35 2013: User online: ['sm']
+Sun Dec 15 18:31:51 2013: 
+Sun Dec 15 18:34:55 2013: sdam enters the room
+Sun Dec 15 18:37:26 2013: User online: ['sdam']
+Sun Dec 15 18:38:30 2013: ll enters the room
+Sun Dec 15 18:38:46 2013: User online: ['ll']

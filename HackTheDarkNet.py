@@ -84,15 +84,32 @@ def circle(pos, radius, color=[0,0,0], width=0):
     '''
     pygame.draw.circle(Background, color, pos, radius, width)
     
-def connectServer(login, host, port):
+def connectServer(login, server):
     '''\
     Connection to a remote server
     Parameters
-        login : string
-        host : string
-        port : interger
+        login: string
+        server: string
     '''
-    print "Login: " + login + " Host: " + host + " Port: " + port
+    print "Login: " + login + " Server: " + server 
+    client.connect(login, "127.0.1.1", 6000)
+
+def sendPM(login, msg):
+    '''\
+    Send a privatemessage to the server
+    Parameter:
+        login: String
+        msg: String
+    '''
+    client.pm(login, msg)
+
+def showUser():
+    '''\
+    Show connected user
+    '''
+    client.show()
+    op = open("output", "r")
+    return op.read()
 
 def main():
     G_Screen = pygame.display.set_mode((1024, 768))
@@ -105,6 +122,8 @@ def main():
                                 functions={ "f":f,
                                             "prime": seive, 
                                             "connectServer": connectServer,
+                                            "sendPM": sendPM,
+                                            "showUser": showUser,
                                             "type": type, 
                                             "line": line, 
                                             "polygon": polygon, 
