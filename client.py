@@ -138,7 +138,11 @@ def connect(loginname, hostserver, portserver):
                             break
                         # if no data comes or the connection is broken
                         if not data: break
-                        else: print data
+                        else: 
+                            op = open("output", "w")
+                            op.write(data)
+                            op.close()
+                            print data
             # the needed instance for threading
             l = Listen()
             # start the background job
@@ -271,6 +275,22 @@ def show():
         try:
             # send the command
             new_connect.send("#show"+nicks[-1])
+        except socket.error, detail:
+            print detail
+        except NameError, detail:
+            print detail
+
+# SHOW all user in the chat
+def showhacker():
+    # doc
+    """show all hacker"""
+    # are you connected?
+    if status[-1] == "DISCONNECTED":
+        print "you are not connected"
+    else:
+        try:
+            # send the command
+            new_connect.send("#showhacker"+nicks[-1])
         except socket.error, detail:
             print detail
         except NameError, detail:

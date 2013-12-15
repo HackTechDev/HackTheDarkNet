@@ -21,7 +21,11 @@ from threading import *
 from select import *
 from time import *
 from functions import *
-import socket, string, select, sys, threading, functions, time
+import socket, string, select, sys, threading, functions, time, pdb
+
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+from tableDatabase import *
 
 # default globals
 global HOST, PORT, LOGGING, LOG, TOPIC
@@ -270,6 +274,26 @@ class Server:
                             except socket.error, detail:
                                 print detail
                             break
+                        # SHOW all hacker
+                        if text[:11] == "#showhacker":
+                            # Database
+                            print "showhacker"
+                            engine = create_engine('sqlite:///darknet.db', echo = False)
+                             
+                            Session = sessionmaker(bind = engine)
+                            session = Session()
+
+                            hackers = ""
+                            res = session.query(Hacker).all()
+                            for hacker in res:
+                                hackers += hacker.nickname + "\n";
+
+                            try:
+                                sock.send("Hacker: " + hackers)
+                            except socket.error, detail:
+                                print detail
+                            break
+
                         # PM - get & send private message
                         if text[:3] == "#pm":
                             # cut the "#pm"

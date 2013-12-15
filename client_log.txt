@@ -42,3 +42,23 @@ Sun Dec 15 18:34:55 2013: sdam enters the room
 Sun Dec 15 18:37:26 2013: User online: ['sdam']
 Sun Dec 15 18:38:30 2013: ll enters the room
 Sun Dec 15 18:38:46 2013: User online: ['ll']
+Sun Dec 15 20:32:01 2013: User online: ['kkk']
+Sun Dec 15 20:32:02 2013: User online: ['kkk']
+Sun Dec 15 20:32:25 2013: User online: ['kkk']
+Sun Dec 15 20:37:33 2013: User online: ['coucou']
+Sun Dec 15 20:37:40 2013: User online: ['coucou']
+Sun Dec 15 20:38:11 2013: 
+Sun Dec 15 20:44:41 2013: User online: ['fete']
+Sun Dec 15 20:44:48 2013: User online: ['fete']
+Sun Dec 15 20:47:25 2013: User online: ['fete']
+Sun Dec 15 20:47:27 2013: User online: ['fete']
+Sun Dec 15 20:54:59 2013: User online: ['sam']
+Sun Dec 15 20:55:13 2013: User online: ['sam']
+Sun Dec 15 20:55:26 2013: 
+Sun Dec 15 20:58:49 2013: User online: ['kkk']
+Sun Dec 15 20:59:03 2013: User online: ['kkk']
+Sun Dec 15 20:59:07 2013: User online: ['kkk']
+Sun Dec 15 20:59:08 2013: User online: ['kkk']
+Sun Dec 15 20:59:21 2013: User online: ['kkk']
+Sun Dec 15 20:59:23 2013: User online: ['kkk']
+Sun Dec 15 20:59:30 2013: User online: ['kkk']

@@ -17,17 +17,17 @@ from sys import *
 import sys
 
 # the autor
-auth="by aciddata "
+auth="by Le Sanglier des Ardennes "
 # the version of PyCoCha
-vers=" v.1.3.0 "
+vers=" v.0.0.1 "
 # the year
-date="- 2006"
+date="- 2013"
 
 # INFO
 def info():
 	# doc
 	"""print some info"""
-	print "PyCoCha" + vers + auth + date
+	print "Hack The DarkNet" + vers + auth + date
 
 # HELP function
 def helpme():
@@ -71,7 +71,7 @@ def exit():
 
 # start with this functions
 info()
-helpme()
+#helpme()
 
 
 # EOF - End Of File

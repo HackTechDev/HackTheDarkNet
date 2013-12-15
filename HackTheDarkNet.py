@@ -109,7 +109,18 @@ def showUser():
     '''
     client.show()
     op = open("output", "r")
-    return op.read()
+    output = op.read()
+    return output
+
+def showHacker():
+    '''\
+    Show hacker
+    '''
+    client.showhacker()
+    op = open("output", "r")
+    output = op.read()
+    return output
+
 
 def main():
     G_Screen = pygame.display.set_mode((1024, 768))
@@ -124,6 +135,7 @@ def main():
                                             "connectServer": connectServer,
                                             "sendPM": sendPM,
                                             "showUser": showUser,
+                                            "showHacker": showHacker,
                                             "type": type, 
                                             "line": line, 
                                             "polygon": polygon, 
