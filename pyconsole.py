@@ -17,7 +17,7 @@
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-
+# -*- coding: iso-8859-1 -*-
 
 import pygame, os, sys 
 from pygame.locals import *
@@ -541,6 +541,8 @@ class Console:
                         if event.key in range(256) and chr(event.key) in self.key_calls:
                             self.key_calls[chr(event.key)]()
                     else:
+                        reload(sys)
+                        sys.setdefaultencoding("latin-1")
                         char = str(event.unicode)
                         self.c_in = self.str_insert(self.c_in, char)
 

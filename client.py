@@ -56,7 +56,7 @@ def logging(text):
     logg.close()
 
 # CONNECT to a server
-def connect():
+def connect(loginname, hostserver, portserver):
     # doc
     """connect to the standart or customer server / host"""
 
@@ -69,13 +69,13 @@ def connect():
         global new_connect, my_nick, nicks, host, port
         if nicks[-1] == "":
             # got a nick name ?
-            my_nick = raw_input("enter your nickname first: ")
+            my_nick = loginname
             # add the new nickname to the list
             nicks.append(my_nick)
             # use the prompt as your nickname
             sys.ps1 = nicks[-1]+": "
-            host=raw_input("enter your host/IP: ")
-            port=input("enter your port: ")
+            host = hostserver
+            port = portserver
         # create a socket
         new_connect = socket.socket(AF_INET, SOCK_STREAM)
         try:

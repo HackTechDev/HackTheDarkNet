@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: iso-8859-1 -*-
 
 import pyconsole
 import pygame, os, sys, re
@@ -7,6 +8,8 @@ from pygame.locals import *
 sys.path.append('./module')
 
 from syntax import *
+
+import client
 
 path = os.path.abspath(os.path.dirname(__file__))
 img_path = os.path.join(path, "images")
@@ -81,6 +84,15 @@ def circle(pos, radius, color=[0,0,0], width=0):
     '''
     pygame.draw.circle(Background, color, pos, radius, width)
     
+def connectServer(login, host, port):
+    '''\
+    Connection to a remote server
+    Parameters
+        login : string
+        host : string
+        port : interger
+    '''
+    print "Login: " + login + " Host: " + host + " Port: " + port
 
 def main():
     G_Screen = pygame.display.set_mode((1024, 768))
@@ -92,6 +104,7 @@ def main():
                                 (0,0,1024,500), #A rectangle defining the size and position of the console
                                 functions={ "f":f,
                                             "prime": seive, 
+                                            "connectServer": connectServer,
                                             "type": type, 
                                             "line": line, 
                                             "polygon": polygon, 
