@@ -1,0 +1,5 @@
+
+Sat Dec 14 21:55:54 2013: server started successfully
+Sat Dec 14 22:05:01 2013: sam enters the room
+Sat Dec 14 22:05:17 2013: sam: ll
+Sat Dec 14 22:05:26 2013: sam has left the room
